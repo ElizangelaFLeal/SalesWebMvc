@@ -23,7 +23,6 @@ namespace SalesWebMvc.Services
         public void Insert(Seller obj)
         {
             //Injeta os dados do formulário de Sellers no banco de dados
-            obj.Department = _context.Department.First();
             _context.Add(obj);
             _context.SaveChanges();
         }
